@@ -93,6 +93,41 @@ const RegisterForm = () => {
           <option value="Plus">Plus</option>
         </select>
       </div>
+      <h1 className="text-2xl font-bold mb-4">Dados do Cartão</h1>
+      <div className="flex flex-col gap-2">
+        <label htmlFor="cardholderName">Nome no Cartão</label>
+        <input
+          type="text"
+          name="cardholderName"
+          id="cardholderName"
+          value={cardData.cardholderName}
+          onChange={handleCardDataChange}
+          required
+        />
+      </div>
+      <div className="flex flex-col gap-2">
+        <label htmlFor="cardNumber">Número do Cartão</label>
+        <input
+          type="text"
+          name="cardNumber"
+          id="cardNumber"
+          value={cardData.cardNumber}
+          onChange={handleCardDataChange}
+          required
+        />
+      </div>
+      <div className="flex flex-col gap-2">
+        <label htmlFor="cvc">CVC</label>
+        <input
+          type="password"
+          name="cvc"
+          id="cvc"
+          value={cardData.cvc}
+          onChange={handleCardDataChange}
+          required
+        />
+      </div>
+      <button type="submit">Assinar</button>
     </form>
   );
 };

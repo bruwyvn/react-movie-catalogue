@@ -25,6 +25,9 @@ const MovieDetails = ({ movie }) => {
 
   return (
     <div className="min-h-screen">
+      <div className="container mx-auto my-4 flex items-center justify-center px-4">
+        <h1 className="text-4xl font-semibold">Detalhes</h1>
+      </div>
       <div className="mx-auto max-w-screen-lg py-8">
         {loadingMovieDetails ? (
           <h1>Carregando...</h1>

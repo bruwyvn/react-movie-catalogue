@@ -5,7 +5,7 @@ const Header = () => {
     <header className="bg-gray-800 text-gray-100 py-4">
       <div className="container mx-auto flex items-center justify-between px-4">
         <Link to="/" className="text-2xl font-bold">
-          Catálogo de Filmes
+          Filmes
         </Link>
 
         <div className="flex items-center">

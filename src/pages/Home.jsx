@@ -16,6 +16,9 @@ const Home = () => {
 
   return (
     <div className="min-h-screen py-4">
+      <div className="container mx-auto my-4 flex items-center justify-center px-4">
+        <h1 className="text-4xl font-semibold">Catálogo de Filmes</h1>
+      </div>
       <div className="container mx-auto flex items-center justify-center px-4">
         <input
           type="text"
